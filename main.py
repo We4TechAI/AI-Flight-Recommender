@@ -47,7 +47,7 @@ groq_client = Groq(api_key=os.getenv("GROQ"))
 def search_flights(departure_id: str, arrival_id: str, outbound_date: str,
                    return_date: str, currency: str, adults: str) -> Dict:
     params = {
-        "api_key": os.getenv("SERP_API_KEY"),
+        "api_key": os.getenv("SERPAPI_KEY"),
         "engine": "google_flights",
         "hl": "en",
         "gl": "us",
